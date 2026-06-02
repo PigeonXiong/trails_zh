@@ -1,0 +1,59 @@
+site_name: 命运之轨迹 TRPG 规则 汉化
+site_description: 《英雄传说：命运之轨迹》桌面角色扮演规则 汉化站
+site_url: ""
+copyright: 译者：猪之哀伤 | 本译本仅供Trails of Destiny及TRPG爱好者交流使用，禁止用于任何商业用途，版权归Promethium Books与Falcom所有
+
+theme:
+  name: material
+  language: zh
+  palette:
+    scheme: slate
+    primary: brown
+    accent: amber
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+
+extra_css:
+  - stylesheets/parchment.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 规则介绍:
+      - 卷首: index.md
+      - Introduction 引言: 01_introduction.md
+      - Quick Rules 快速规则: 00_quick_rules.md
+  - 基础规则:
+      - Chap 1 游玩《命运之轨迹》: 02_chapter_1_playing_trails_of_destiny.md
+      - Chap 2 冒险: 03_chapter_2_adventure.md
+      - Chap 3 战斗与行动: 04_chapter_3_combat_action.md
+  - 角色细则:
+      - Chap 4 角色创建: 05_chapter_4_building_characters.md
+      - Chap 5 属性: 06_chapter_5_ability_scores.md
