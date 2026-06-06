@@ -1,0 +1,228 @@
+:root {
+  --md-primary-fg-color: #14263f;
+  --md-primary-fg-color--light: #203d63;
+  --md-primary-fg-color--dark: #091524;
+  --md-accent-fg-color: #7fb7e8;
+  --taiwu-font: "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "PingFang SC", sans-serif;
+  --taiwu-bg: #07111d;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b1625;
+  --md-default-bg-color--light: #101f33;
+  --md-default-bg-color--lighter: #162a44;
+  --md-default-fg-color: #e6edf5;
+  --md-default-fg-color--light: #c8d4e1;
+  --md-default-fg-color--lighter: #9dacbd;
+  --md-typeset-color: #e6edf5;
+  --md-typeset-a-color: #89c7ff;
+  --md-code-bg-color: #132238;
+  --md-code-fg-color: #dcecff;
+  --md-admonition-bg-color: #101f33;
+  --md-footer-bg-color: #06101b;
+  --md-footer-bg-color--dark: #030a12;
+}
+
+html,
+body,
+.md-container {
+  background-color: var(--taiwu-bg);
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(83, 145, 202, 0.18), transparent 32rem),
+    linear-gradient(180deg, #0e1d31 0%, #07111d 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--taiwu-font);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--taiwu-font);
+}
+
+.md-header,
+.md-tabs {
+  background: linear-gradient(180deg, #172d4a 0%, #0b1b2f 100%);
+  color: #eaf3ff;
+}
+
+.md-main {
+  background:
+    linear-gradient(90deg, rgba(126, 170, 210, 0.07), transparent 22%, transparent 78%, rgba(126, 170, 210, 0.05)),
+    transparent;
+}
+
+.md-content__inner {
+  padding-top: 1.4rem;
+}
+
+.md-typeset {
+  font-family: var(--taiwu-font);
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.md-header,
+.md-tabs,
+.md-nav,
+.md-search,
+.md-typeset table,
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset code,
+.md-typeset pre,
+.md-typeset kbd {
+  font-family: var(--taiwu-font);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: var(--taiwu-font);
+  color: #d7e7f8;
+  font-weight: 700;
+}
+
+.md-typeset h1 {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid rgba(140, 178, 213, 0.42);
+  padding-bottom: 0.35rem;
+}
+
+.md-typeset h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.md-typeset h3::before,
+.md-typeset h3::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.32em solid transparent;
+  border-bottom: 0.32em solid transparent;
+}
+
+.md-typeset h3::before {
+  border-right: 0.7em solid rgba(143, 164, 186, 0.58);
+}
+
+.md-typeset h3::after {
+  border-left: 0.7em solid rgba(143, 164, 186, 0.58);
+}
+
+.md-typeset strong {
+  color: #58a9ff;
+}
+
+.md-typeset blockquote {
+  border-left-color: #6fa6d8;
+  color: #c8d4e1;
+}
+
+.md-typeset table:not([class]) {
+  background-color: rgba(16, 31, 51, 0.88);
+  border: 1px solid rgba(141, 174, 207, 0.32);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: rgba(31, 58, 92, 0.76);
+  color: #eaf3ff;
+}
+
+.md-typeset code {
+  color: #dcecff;
+  background-color: rgba(19, 34, 56, 0.94);
+  border: 1px solid rgba(141, 174, 207, 0.22);
+  border-radius: 3px;
+}
+
+.md-typeset pre,
+.md-typeset .highlight {
+  background-color: rgba(8, 17, 29, 0.97);
+}
+
+.md-typeset pre code {
+  color: #dcecff;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: rgba(126, 183, 232, 0.52);
+  box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.16);
+  font-size: 0.68rem;
+  line-height: 1.48;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(28, 58, 94, 0.5);
+}
+
+.md-typeset .admonition.formula {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  text-align: center;
+}
+
+.md-typeset .admonition.formula .admonition-title {
+  text-align: left;
+}
+
+.md-typeset .admonition.example {
+  font-style: italic;
+}
+
+.md-nav__title,
+.md-nav__item .md-nav__link--active {
+  color: #89c7ff;
+}
+
+.md-typeset .twemoji {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: -0.12em;
+}
+
+.md-typeset .twemoji svg {
+  width: 1.08em;
+  height: 1.08em;
+}
+
+.floating-music-player {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgba(141, 174, 207, 0.32);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.36);
+}
+
+@media screen and (max-width: 76.1875em) {
+  .floating-music-player {
+    width: 260px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .floating-music-player {
+    left: 0.6rem;
+    bottom: 0.6rem;
+    width: 220px;
+    height: 92px;
+  }
+}
